@@ -1,12 +1,13 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 console.log("Hello world!");
 function App() {
   return (
     <div>
-      <Alert>
-        Hello <span className="text-success">world!</span>
-      </Alert>
+      <Button btnType="btn btn-primary">This is a piece of text</Button>
+      <Button btnType="btn btn-secondary">This is a piece of text</Button>
+      <Button btnType="btn btn-success">This is a piece of text</Button>
     </div>
   );
 }
