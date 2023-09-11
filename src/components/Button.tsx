@@ -1,4 +1,4 @@
-import React from "react";
+import Alert from "./Alert";
 
 interface ButtonProps {
   children: string;
@@ -8,9 +8,11 @@ interface ButtonProps {
 
 const Button = ({ children, onClick, color = "success" }: ButtonProps) => {
   return (
-    <button className={"btn btn-" + color} onClick={onClick}>
-      {children}
-    </button>
+    <>
+      <button className={"btn btn-" + color} onClick={onClick}>
+        {children}
+      </button>
+    </>
   );
 };
 
